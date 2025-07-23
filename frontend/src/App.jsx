@@ -1,5 +1,6 @@
 import Chatbot from './components/Chatbot';
 import { CssBaseline, Container, Typography, Box } from '@mui/material';
+// eslint-disable-next-line no-unused-vars
 import { motion } from 'framer-motion';
 import { useState } from 'react';
 

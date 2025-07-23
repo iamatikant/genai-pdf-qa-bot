@@ -12,3 +12,4 @@ frontend/.next/
 
 # OS
 .DS_Store
+.npmrc
