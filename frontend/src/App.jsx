@@ -1,5 +1,12 @@
 import Chatbot from './components/Chatbot';
-import { CssBaseline, Container, Typography, Box } from '@mui/material';
+import {
+  CssBaseline,
+  Container,
+  Typography,
+  Box,
+  List,
+  ListItem,
+} from '@mui/material';
 // eslint-disable-next-line no-unused-vars
 import { motion } from 'framer-motion';
 import { useState } from 'react';
@@ -10,6 +17,11 @@ export default function App() {
   return (
     <>
       <CssBaseline />
+      <Typography variant='subtitle1' component='h1'>
+        Check out the branch in your local and run below commands in the backend
+        folder: 1. source venv/bin/activate 2. pip install -r requirements.txt
+        3. uvicorn app:app --reload
+      </Typography>
       <Container maxWidth='md' sx={{ mt: 4 }}>
         <Box
           sx={{
