@@ -19,7 +19,7 @@ export default function Chatbot({ setLoading }) {
   const [pdfUploaded, setPdfUploaded] = useState(false);
   const [isBotThinking, setIsBotThinking] = useState(false);
 
-  const URL = 'http://10.224.112.228:8000/';
+  const URL = 'http://10.224.233.91:8000/';
 
   const handleFileUpload = async (e) => {
     const file = e.target.files[0];
@@ -67,7 +67,7 @@ export default function Chatbot({ setLoading }) {
       const formData = new FormData();
       formData.append('question', userMsg.text);
 
-      const res = await fetch(`${URL}/ask`, {
+      const res = await fetch(`${URL}ask`, {
         method: 'POST',
         body: formData,
       });
